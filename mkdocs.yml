@@ -1,0 +1,60 @@
+site_name: My Docs
+
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+  language: zh
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - prev_next_buttons: false
+
+extra_css:
+  - assets/extra.css
+
+repo_url: https://github.com/ghost-bible/bible
+repo_name: '野鬼圣经'
+
+plugins:
+  - glightbox
+  - search:
+      lang: 
+        - en
+        - zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
